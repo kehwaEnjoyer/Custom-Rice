@@ -1,0 +1,16 @@
+{
+	"layer":"top",
+	"position": "top",
+	"modules-left":["hyprland/workspaces","hyprland/window"],
+	"modules-center":["clock"],
+	"modules-right":["cpu","memory","battery","pulseaudio","tray"],
+	
+	"clock":{
+	"format":"{:%H:%M}",
+	"format-alt": "{:%d-%m-%Y}"
+	},
+	
+	"cpu":{
+	"format":"{usage}%"	
+	}
+}
