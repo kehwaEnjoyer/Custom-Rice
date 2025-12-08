@@ -3,14 +3,55 @@
 	"position": "top",
 	"modules-left":["hyprland/workspaces","hyprland/window"],
 	"modules-center":["clock"],
-	"modules-right":["cpu","memory","battery","pulseaudio","tray"],
+	"modules-right":["network","cpu","memory","battery","pulseaudio","tray"],
 	
 	"clock":{
 	"format":"{:%H:%M}",
 	"format-alt": "{:%d-%m-%Y}"
 	},
 	
-	"cpu":{
-	"format":"{usage}%"	
-	}
+	"cpu": {
+    "format": "CPU: {usage}%  "
+	},
+	"memory": {
+    	"format": "RAM: {used}"
+	},
+
+
+	"battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": {
+        "default": ["","","","",""],
+        "charging": ["","","","",""]
+    },
+    "format-charging": "{icon} {capacity}%",
+    "format-full": "{capacity}%",
+    "format-plugged": "{icon}  {capacity}%",
+    "states": {
+        "good": 90,
+        "warning": 30,
+        "critical": 15
+    }
+},
+	"network": {
+    "interface": "wlan0",                 // change if needed
+    "tooltip": true,
+    "tooltip-format": "SSID: {essid}\nStrength: {signalStrength}%",
+    "format-wifi": "{icon}",
+    "format-icons": {
+      "wifi": [
+        "󰤟",   // 0–20%
+        "󰤢",   // 20–40%
+        "󰤨",   // 40–60%
+        "󰤥",   // 60–80%
+        "󰤨"    // 80–100%
+      ]
+    },
+    "format-disconnected": "󰤭",
+
+	"on-click": "networkmanager_dmenu",
+	"on-click-right": "nm-connection-editor"
+
+  }
 }
+
