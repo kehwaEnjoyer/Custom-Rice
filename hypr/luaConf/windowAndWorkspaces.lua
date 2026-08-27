@@ -43,3 +43,6 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+--speacial drop down terminal
+hl.workspace_rule({ workspace = "special:quake", on_created_empty= terminal ,gaps_out=50})
