@@ -1,0 +1,18 @@
+# Core behavior
+mode=drun
+show=drun
+prompt=Search...
+insensitive=true
+allow_images=true
+image_size=24
+
+# Layout & Geometry
+width=750
+height=380
+location=center
+layer=overlay
+
+# Execution settings
+always_parse_args=true
+show_all=true
+print_command=true

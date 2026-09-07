@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if pkill wofi; then
+    exit 0
+fi
+
+# Change directory to wofi config location
+cd "$HOME/.config/wofi" || exit 1
+
+# Pick a random PNG and update the symlink in place
+SIDEBAR_DIR="$HOME/.config/wofi/sidebars"
+RANDOM_PNG=$(find "$SIDEBAR_DIR" -type f -name "*.png" | shuf -n 1)
+
+if [ -n "$RANDOM_PNG" ]; then
+    ln -sf "$RANDOM_PNG" "sidebar.png"
+fi
+
+# Launch wofi from within ~/.config/wofi
+wofi --show drun
