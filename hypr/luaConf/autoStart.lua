@@ -6,5 +6,5 @@
 --
  hl.on("hyprland.start", function () 
    --hl.exec_cmd(terminal)
-   hl.exec_cmd("waybar & hyprpaper & hypridle")
+   hl.exec_cmd("ashell & hyprpaper & hypridle")
  end)
