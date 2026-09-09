@@ -5,3 +5,8 @@ hl.monitor({
     position = "auto",
     scale    = "1",
 })
+
+hl.monitor({
+    output = "HDMI-A-1",
+    mirror = "eDP-1"
+})
