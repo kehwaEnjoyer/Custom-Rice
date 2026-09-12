@@ -41,7 +41,7 @@ icon = "󱗼"
 command = "$HOME/.config/scripts/wofi-rand"
 
 [system_info]
-indicators = [ "Cpu", "Memory", "Temperature", "DownloadSpeed", "UploadSpeed" ]
+indicators = [ "Cpu", "Memory", "DownloadSpeed", "UploadSpeed" ]
 
 [system_info.memory]
 format = "Fraction"
