@@ -50,3 +50,13 @@ Feel free to steal, modify, or inspect whatever you need.
 * `Swapping Bars:` ashell is launched by default in hypr/hyprland.conf. To swap back to Waybar, replace "ashell" in exec-once = ashell with "waybar"
 
 * `Dependencies:` Expect standard Wayland utilities (wl-clipboard, grim, slurp, etc.) to be required by some helper scripts.
+
+## Keybinds
+
+| Keybind | Action |
+|:---:|---|
+| `Super + Q` | Open terminal |
+| `Super + E` | Open menu |
+| `Super + R` | Launch Wofi |
+| `Super + \`` | Slide-in terminal |
+| `Super + B` | Browser |
