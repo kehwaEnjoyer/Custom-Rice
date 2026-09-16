@@ -51,7 +51,7 @@ Feel free to steal, modify, or inspect whatever you need.
 
 * `Dependencies:` Expect standard Wayland utilities (wl-clipboard, grim, slurp, etc.) to be required by some helper scripts.
 
-## Keybinds
+## Useful Keybinds
 
 | Keybind | Action |
 |:---:|---|
