@@ -20,7 +20,7 @@ weak = "#434c5e"
 strong = "#4c566a"
 
 [modules]
-left = [ [ "appLauncher", "Updates", "Workspaces" ] , "MediaPlayer"]
+left = [ [ "appLauncher", "FileManager", "Updates", "Workspaces" ] , "MediaPlayer"]
 center = [ "WindowTitle", "Tempo" , "notifications" ]
 right = [ "SystemInfo",[ "Tray", "Privacy", "Settings" ] ]
 
@@ -39,6 +39,11 @@ interval = 3600
 name = "appLauncher"
 icon = "󱗼"
 command = "$HOME/.config/scripts/wofi-rand"
+
+[[CustomModule]]
+name = "FileManager"
+icon = ""
+command = "dolphin ~"
 
 [system_info]
 indicators = [ "Cpu", "Memory", "DownloadSpeed", "UploadSpeed" ]
