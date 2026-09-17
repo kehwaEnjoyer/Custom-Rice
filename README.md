@@ -56,7 +56,9 @@ Feel free to steal, modify, or inspect whatever you need.
 | Keybind | Action |
 |:---:|---|
 | `Super + Q` | Open terminal |
-| `Super + E` | Open menu |
+| `Super + E` | Open file manager |
 | `Super + R` | Launch Wofi |
 | `Super + \`` | Slide-in terminal |
 | `Super + B` | Browser |
+| `Super + print_screen` | interactive screenshot |
+| `Super + M` | Self Destruct |
