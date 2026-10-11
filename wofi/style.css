@@ -1,8 +1,10 @@
+@import url("colors.css");
+
 window {
     margin: 0px;
-    border: 2px solid #5e81ac;
+    border: 2px solid @color7;
     border-radius: 12px;
-    background-color: rgba(46, 52, 64, 0.95);
+    background-color: @color0;
     font-family: "JetBrains Mono", sans-serif;
     font-size: 14px;
 }
@@ -12,16 +14,16 @@ window {
     margin-bottom: 12px;
     margin-right: 12px;
     margin-left: 350px; /* Offset past the 200px SVG image */
-    border: 1px solid #4c566a;
+    border: 1px solid @color6;
     border-radius: 8px;
-    color: #eceff4;
-    background-color: #3b4252;
+    color: @color7;
+    background-color: @color0;
     padding: 8px;
 }
 
 
 #input:focus {
-    border: 1px solid #88c0d0;
+    border: 1px solid @color6;
 }
 
 #inner-box {
@@ -59,16 +61,16 @@ window {
 }
 
 #entry:selected {
-    background-color: #434c5e;
+    background-color: @color3;
 }
 
 #text {
     margin: 0px 5px;
-    color: #d8dee9;
+    color: @color7;
 }
 
 #text:selected {
-    color: #88c0d0;
+    color: @color7;
     font-weight: bold;
 }
 
@@ -94,12 +96,12 @@ scrollbar trough {
 
 /* The actual draggable pill */
 scrollbar slider {
-    background-color: #4c566a;
+    background-color: @color2;
     border-radius: 4px;
     min-width: 6px;
     border: none;
 }
 
 scrollbar slider:hover {
-    background-color: #88c0d0;
+    background-color: @color1;
 }
