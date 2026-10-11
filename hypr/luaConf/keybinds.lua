@@ -27,6 +27,9 @@ hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right" 
 hl.bind(mainMod .. " + SHIFT + up",    hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + down",  hl.dsp.window.move({ direction = "down" }))
 
+-- Cycle wallpaper using themeTree pipeline
+hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd("kitty --start-as=hidden ~/.local/bin/themeTree-next"))
+
 --fullscreen
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 

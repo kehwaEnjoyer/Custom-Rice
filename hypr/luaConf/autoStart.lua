@@ -6,5 +6,7 @@
 --
  hl.on("hyprland.start", function () 
    --hl.exec_cmd(terminal)
-   hl.exec_cmd("ashell & hyprpaper & hypridle")
+   hl.exec_cmd("hyprpaper & hypridle")
+   hl.exec_cmd("themetreedaemon")
+   hl.exec_cmd("kitty --start-as=hidden ~/.local/bin/themeTree-next")
  end)
