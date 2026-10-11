@@ -45,4 +45,4 @@ hl.window_rule({
 })
 
 --speacial drop down terminal
-hl.workspace_rule({ workspace = "special:quake", on_created_empty= terminal ,gaps_out=50})
+hl.workspace_rule({ workspace = "special:quake", on_created_empty= terminal .. " --hold fastfetch" ,gaps_out=50})
